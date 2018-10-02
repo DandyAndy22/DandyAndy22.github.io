@@ -1,0 +1,17 @@
+html {
+    font-size: 16px; 
+    font-family: 'Candara', sans-serif; 
+  }
+  
+  h1 {
+    max-width: 500px;
+    padding: 10px;
+    background-color: blueviolet;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.25));
+  }
+  tahiti {
+    float: right;
+  }
+  huts {
+    position: absolute; left: 200px;
+  }
