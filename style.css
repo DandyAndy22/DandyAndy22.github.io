@@ -1,8 +1,14 @@
-  body {
-    padding-top: 3.5rem;
-  }
-  div.image:before {
-    background: image("https://tse2.mm.bing.net/th?id=ORT.TH_507914254&o=5&pid=1.7&eid=G.507914254");
+body {
+  background-image: url('http://dvqlxo2m2q99q.cloudfront.net/000_clients/66598/page/665981549TVhO.jpg');
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+} 
+.jumbotron {
+  background-color: rgba(255, 255, 255, 0);
+}
   }
   h1 {
     font-family: Arial, Helvetica, sans-serif;
