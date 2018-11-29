@@ -17,3 +17,11 @@ div.fixed {
     top: 2%;
     right: 2%;
   }
+  div.col-md-4 {
+    background: aquamarine;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+  }
+  div.col-md-4 h2 {
+    color: darkgrey;
+  }
