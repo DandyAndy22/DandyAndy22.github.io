@@ -6,11 +6,13 @@ body {
   background-attachment: fixed;
   background-position: center; 
 } 
-.jumbotron {
+div.jumbotron {
   background-color: rgba(255, 255, 255, 0);
 }
   }
   h1 {
     font-family: Arial, Helvetica, sans-serif;
   }
-  
+  h1.display-3 {
+    position: center;
+  }
