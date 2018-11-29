@@ -20,6 +20,12 @@ h1.display-3 {
   div.col-md-4 h2 {
     color: darkgrey;
   }
+  img {
+    border: 1px solid #ddd; 
+    border-radius: 4px;  
+    padding: 5px; 
+    width: 150px;
+}
   a.btn-secondary {
     background-color: dodgerblue;
     box-shadow: 5px 5px 5px grey;
