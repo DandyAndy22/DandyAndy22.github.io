@@ -1,97 +1,99 @@
 <!DOCTYPE html>
+
 <html>
 
-   <head>
-       <meta charset="utf-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-       <meta name="description" content="">
-       <meta name="author" content="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-       <title>Andras Mihaly</title>
-       <link href="style.css" rel="stylesheet" type="text/css">
-       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-   </head>
+  <title>Andras Mihaly</title>
 
-   <body>
-               <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-                  <a class="navbar-brand" href="https://DandyAndy22.github.io">Home <span class="sr-only">(current)</span></a>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                  </button>
+  <script>
 
-                  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    $(document).ready(function () {
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+        $(this).toggleClass('active');
+      });
+    });
 
-                     <ul class="navbar-nav mr-auto">
+  </script>
+</head>
 
-                       <li class="nav-item">
-                         <a class="nav-link" href="https://traveloregon.com/places-to-go/cities/bend/?gclid=EAIaIQobChMIlq_vi9D63gIVzCCtBh0BZAKYEAAYASAAEgLcZfD_BwE">Bend, Oregon</a>
-                       </li>
 
-                       <li class="nav-item">
-                         <a class="nav-link" href="https://osucascades.edu/">OSU-Cascades</a>
-                       </li>
+<body>
+  <div class="wrapper">
 
-                       <li class="nav-item dropdown">
-                         <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accounts</a>
-                         <div class="dropdown-menu" aria-labelledby="dropdown01">
-                           <a class="dropdown-item" href="https://stackoverflow.com/users/9866703/andras-mihaly">Stack Overflow</a>
-                           <a class="dropdown-item" href="https://www.linkedin.com/in/andras-mihaly-39174950">LinkedIn</a>
-                           <a class="dropdown-item" href="https://github.com/DandyAndy22">GitHub</a>
-                         </div>
-                       </li>
-                     </ul>
+    <!-- Sidebar -->
 
-                  </div>
-               </nav>
+    <nav id="sidebar">
+      <!-- Sidebar Header -->
+      <div class="sidebar-header">
+        <h3>Collapsible Sidebar</h3>
+      </div>
 
-                 <main role="main">
-                   <div class="jumbotron">
-                     <center>
-                        <div class="image">
-                          <h1 class="display-3">Andras Mihaly</h1>
-                          <p>Hello, thank you for checking out my Portfolio! I am an Oregon State University-Cascades student</p>
-                          <p><a class="btn btn-primary btn-lg" href="https://gdoc.pub/doc/e/2PACX-1vQYzhq3CjwQUtblFmni0mM4sxPcZF8xfkvWgXiPPBpdcpYAva9rf9DZmx0HhdDsAxfJMUtHqzygiggn" role="button" target="_blank">Resume &raquo;</a></p>
-                        </div>
-                     </center>
-                   </div>
+      <!-- Sidebar Links -->
+      <ul class="list-unstyled components">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><!-- Link with dropdown items -->
+          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+          <ul class="collapse list-unstyled" id="homeSubmenu">
+            <li><a href="#">Page</a></li>
+            <li><a href="#">Page</a></li>
+            <li><a href="#">Page</a></li>
+          </ul>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
 
-                   <div class="container">
-                     <div class="row">
-                       <div class="col-md-4">
-                         <h2>Fall 2018 Project</h2>
-                         <img src="Data_Viz.png" alt="" align="right">
-                         <p>This project utilizes fundamental web development technologies and concepts to produce an informative visualization of data from the Zagster Bike Share.</p>
-                         <p><a class="btn btn-secondary" href="https://dandyandy22.github.io/Zag-Client/" role="button">View Visual &raquo;</a></p>
-                       </div>
+      <!-- Page Content -->
 
-                       <div class="col-md-4">
-                         <h2>Fall 2019 Project</h2>
-                         <p>For my Software Development introduction course I built a space trading game with one of my peers. It was a great opportunity to learn GO, how to create a server with GO, deploy a heroku app and design a user interface. </p>
-                         <p><a class="btn btn-secondary" href="https://trade-wars-client-ja.herokuapp.com/" role="button">Play Game &raquo;</a></p>
-                       </div>
+      <div id="content">
 
-                       <div class="col-md-4">
-                         <h2>Current Work</h2>
-                         <p>In my role as a Student Consultant, I currently work primarily on developing Wordpress sites based on client specifications both independently and in conjuction with clients. </p>
-                         <p><a class="btn btn-secondary" href="web_dev.html" role="button">Projects &raquo;</a></p>
-                       </div>
+        <nav class="navbar">
+          <div class="container-fluid">
 
-                     </div>
-                     <hr>
-                   </div> <!-- /container -->
-                 </main>
+            <button type="button" id="sidebarCollapse" class="btn btn-light">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
 
-                 <footer class="container">
-                   <p>&copy; Andras Mihaly 2019-2020</p>
-                 </footer>
+          </div>
+        </nav>
 
-                 <!-- Bootstrap core JavaScript
-                 ================================================== -->
-                 <!-- Placed at the end of the document so the pages load faster -->
-                 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-               </body>
+        <main role="main">
+          <div class="jumbotron">
+            <center>
+              <div class="image">
+               <h1 class="display-3">Andras Mihaly</h1>
+               <p class="jumbotron-p">Hello, thank you for checking out my portfolio! I am an Oregon State University-Cascades Computer Science student. This is a record of the software & web development related work I have accomplished and relevant topics I have studied to date. </p>
+               <p><a class="btn btn-primary btn-lg" href="https://gdoc.pub/doc/e/2PACX-1vQYzhq3CjwQUtblFmni0mM4sxPcZF8xfkvWgXiPPBpdcpYAva9rf9DZmx0HhdDsAxfJMUtHqzygiggn" role="button" target="_blank">Resume &raquo;</a></p>
+             </div>
+           </center>
+         </div>
+
+
+         <!-- /container -->
+       </main>
+     </div>
+     
+   </div>
+
+
+   <footer class="container">
+    <p>&copy; Andras Mihaly 2020</p>
+  </footer>
+
+</body>
+
 </html>
