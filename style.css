@@ -1,3 +1,4 @@
+
 .wrapper {
     display: flex;
     align-items: stretch;
@@ -33,16 +34,6 @@
 #sidebar ul p {
     color: #fff;
     padding: 10px;
-}
-
-#sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
-}
-#sidebar ul li a:hover {
-    color: #7386D5;
-    background: #fff;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
@@ -86,10 +77,19 @@
     margin: 5px auto;
 }
 
-ul ul a {
+.sidebar_buttons {
     font-size: 0.9em !important;
     padding-left: 30px !important;
+    width: 100%;
     background: #6d7fcc;
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+.sidebar_buttons:hover {
+    color: #7386D5;
+    background: #fff;
 }
 
 a[data-toggle="collapse"] {
@@ -192,3 +192,4 @@ a.btn-secondary {
   background-color: dodgerblue;
   box-shadow: 5px 5px 5px grey;
 }
+
