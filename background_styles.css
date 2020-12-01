@@ -1,0 +1,152 @@
+@import "https://fonts.googleapis.com/css?family=Playfair+Display:400,700i,900i";
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Playfair Display', serif;
+  color: #acaabe;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #3b3d54;
+  font-size: 14px;
+  overflow: hidden; }
+
+.wrap {
+  perspective-origin: 50% 50%; }
+
+.page {
+  margin: 3%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 1.4vw; }
+  .page h2 {
+    font-weight: bold;
+    font-size: 6.5vw;
+    font-weight: 900;
+    font-style: italic;
+    color: #dad8ec; }
+
+.svg {
+  stroke: #7ceaa4;
+  position: absolute;
+  bottom: -100vh;
+  transform-style: preserve-3d; }
+
+.svg:nth-child(1) {
+  left: 60%;
+  animation: raise1 13s linear infinite;
+  animation-delay: -3s;
+  transform: scale(-0.3) rotate(187deg);
+  z-index: -6;
+  filter: blur(-5px); }
+@keyframes raise1 {
+  to {
+    bottom: 150vh;
+    transform: scale(-0.3) rotate(119deg); } }
+.svg:nth-child(2) {
+  left: 83%;
+  animation: raise2 11s linear infinite;
+  animation-delay: 0s;
+  transform: scale(0) rotate(217deg);
+  z-index: -5;
+  filter: blur(-4px); }
+@keyframes raise2 {
+  to {
+    bottom: 150vh;
+    transform: scale(0) rotate(164deg); } }
+.svg:nth-child(3) {
+  left: -9%;
+  animation: raise3 12s linear infinite;
+  animation-delay: -3s;
+  transform: scale(0.3) rotate(194deg);
+  z-index: -4;
+  filter: blur(-3px); }
+@keyframes raise3 {
+  to {
+    bottom: 150vh;
+    transform: scale(0.3) rotate(249deg); } }
+.svg:nth-child(4) {
+  left: 84%;
+  animation: raise4 7s linear infinite;
+  animation-delay: 0s;
+  transform: scale(0.6) rotate(163deg);
+  z-index: -3;
+  filter: blur(-2px); }
+@keyframes raise4 {
+  to {
+    bottom: 150vh;
+    transform: scale(0.6) rotate(29deg); } }
+.svg:nth-child(5) {
+  left: 92%;
+  animation: raise5 12s linear infinite;
+  animation-delay: -1s;
+  transform: scale(0.9) rotate(100deg);
+  z-index: -2;
+  filter: blur(-1px); }
+@keyframes raise5 {
+  to {
+    bottom: 150vh;
+    transform: scale(0.9) rotate(216deg); } }
+.svg:nth-child(6) {
+  left: 31%;
+  animation: raise6 15s linear infinite;
+  animation-delay: -4s;
+  transform: scale(1.2) rotate(287deg);
+  z-index: -1;
+  filter: blur(0px); }
+@keyframes raise6 {
+  to {
+    bottom: 150vh;
+    transform: scale(1.2) rotate(21deg); } }
+.svg:nth-child(7) {
+  left: -2%;
+  animation: raise7 7s linear infinite;
+  animation-delay: 0s;
+  transform: scale(1.5) rotate(268deg);
+  z-index: 0;
+  filter: blur(1px); }
+@keyframes raise7 {
+  to {
+    bottom: 150vh;
+    transform: scale(1.5) rotate(6deg); } }
+.svg:nth-child(8) {
+  left: 60%;
+  animation: raise8 13s linear infinite;
+  animation-delay: -3s;
+  transform: scale(1.8) rotate(314deg);
+  z-index: 1;
+  filter: blur(2px); }
+@keyframes raise8 {
+  to {
+    bottom: 150vh;
+    transform: scale(1.8) rotate(173deg); } }
+.svg:nth-child(9) {
+  left: 49%;
+  animation: raise9 9s linear infinite;
+  animation-delay: -2s;
+  transform: scale(2.1) rotate(180deg);
+  z-index: 2;
+  filter: blur(3px); }
+@keyframes raise9 {
+  to {
+    bottom: 150vh;
+    transform: scale(2.1) rotate(123deg); } }
+.svg:nth-child(10) {
+  left: 23%;
+  animation: raise10 18s linear infinite;
+  animation-delay: 0s;
+  transform: scale(2.4) rotate(76deg);
+  z-index: 3;
+  filter: blur(4px); }
+@keyframes raise10 {
+  to {
+    bottom: 150vh;
+    transform: scale(2.4) rotate(140deg); } }
+
+/*# sourceMappingURL=background_styles.css.map */
