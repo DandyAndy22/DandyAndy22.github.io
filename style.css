@@ -193,3 +193,12 @@ a.btn-secondary {
   box-shadow: 5px 5px 5px grey;
 }
 
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: #000000;
+   text-align: center;
+}
+

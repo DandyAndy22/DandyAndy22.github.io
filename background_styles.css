@@ -3,15 +3,14 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Playfair Display', serif;
   color: #acaabe;
   text-rendering: optimizeLegibility;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #3b3d54;
-  font-size: 14px;
-  overflow: hidden; }
+  background-color: url() !important;
+  overflow: hidden; 
+}
 
 .wrap {
   perspective-origin: 50% 50%; }
@@ -33,7 +32,7 @@ body {
     color: #dad8ec; }
 
 .svg {
-  stroke: #7ceaa4;
+  stroke: #feeb01;
   position: absolute;
   bottom: -100vh;
   transform-style: preserve-3d; }
