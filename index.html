@@ -23,6 +23,13 @@
         $('#sidebar').toggleClass('active');
         $(this).toggleClass('active');
       });
+      function toggleAbout() {
+        if( document.getElementById("hideAbout").style.display=='none' ){
+          document.getElementById("hideAbout").style.display = 'modal';
+        }else{
+          document.getElementById("hideAbout").style.display = 'none';
+        }
+      }
     });
 
   </script>
@@ -37,20 +44,45 @@
 
     <nav id="sidebar">
 
-      <!-- Sidebar Header -->
-      <div class="sidebar-header">
-        <h3><a href="#">Home</a></h3>
-      </div>
-
       <!-- Sidebar Links -->
 
       <ul class="list-unstyled components">
-        <li><button class="sidebar_buttons" href="#">About</button></li>
-        <li><button class="sidebar_buttons" href="#">Work</button></li>
-        <li><button class="sidebar_buttons" href="#">Interests</button></li>
-        <li><button class="sidebar_buttons" href="#">Contact</button></li>
+        <li>
+          <div class="sidebar_buttons"><a href="#">Home</a></div>
+        </li>
+        <li>
+          <div class="sidebar_buttons"><a href="#">About</a></div>
+        </li>
+        <li>
+          <div class="sidebar_buttons"><a href="#">Work</a></div>
+        </li>
+        <li>
+          <div class="sidebar_buttons"><a href="#">Interests</div>
+          </li>
       </ul>
     </nav>
+
+    <!-- Content Modals -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Page Content -->
 
@@ -65,20 +97,39 @@
             <span></span>
           </button>
 
+          <div class="social-buttons">
+            <div class="social-button">
+              <a href="https://github.com/DandyAndy22">
+                <img class="icons" src="GitHub-Mark-120px-plus.png">
+              </a>
+            </div>
+            <div class="social-button">
+              <a href="https://www.linkedin.com/in/andras-m-39174950">
+                <img class="icons" src="linkedin-icon-white.png">
+              </a>
+            </div>
+            <!-- <div class="social-button"> Hackerrank </div>
+            <div class="social-button"> Leetcode </div> -->
+            <div class="social-button">
+              <a href="https://gdoc.pub/doc/e/2PACX-1vQYzhq3CjwQUtblFmni0mM4sxPcZF8xfkvWgXiPPBpdcpYAva9rf9DZmx0HhdDsAxfJMUtHqzygiggn">
+                <img class="icons" src="resume-icon.png">
+              </a>
+            </div>
+          </div>
+
         </div>
       </nav>
 
       <main role="main">
 
         <div class="jumbotron">
-          
+
           <center>
             <div class="image">
               <h1 class="display-3">Andras Mihaly</h1>
               <p class="jumbotron-p">
                Hello, thank you for checking out my portfolio! I am an Oregon State University-Cascades Computer Science student. This is a record of the software & web development related work I have accomplished and relevant topics I have studied to date. 
              </p>
-             <p><a class="btn btn-primary btn-lg" href="https://gdoc.pub/doc/e/2PACX-1vQYzhq3CjwQUtblFmni0mM4sxPcZF8xfkvWgXiPPBpdcpYAva9rf9DZmx0HhdDsAxfJMUtHqzygiggn" role="button" target="_blank">Resume &raquo;</a></p>
            </div>
          </center>
 

@@ -3,13 +3,13 @@
   box-sizing: border-box; }
 
 body {
-  color: #acaabe;
+  color: #d3d3d3 !important;
   text-rendering: optimizeLegibility;
-  font-smooth: always;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: url() !important;
-  overflow: hidden; 
+  background: url(dark-space-background.jpg) !important;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+  width: 100%;
 }
 
 .wrap {

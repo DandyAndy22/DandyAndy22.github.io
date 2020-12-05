@@ -6,8 +6,7 @@
 }
 
 #sidebar {
-    background: #7386D5;
-    color: #fff;
+    background: linear-gradient(151deg, rgba(179, 179, 179,.3) 0%, rgba(20,20,20,0.05) 100%); 
     transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
     transform-origin: center left; /* Set the transformed position of sidebar to center left side. */
     min-width: 250px;
@@ -20,12 +19,6 @@
     transform: rotateY(100deg); /* Rotate sidebar vertically by 100 degrees. */
 }
 
-#sidebar .sidebar-header {
-    padding: 20px;
-    background: #6d7fcc;
-}
-
-
 #sidebar ul.components {
     padding: 20px 0;
     border-bottom: 1px solid #47748b;
@@ -36,15 +29,12 @@
     padding: 10px;
 }
 
-#sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #fff;
-    background: #6d7fcc;
-}
 
  #sidebarCollapse {
     width: 40px;
     height: 40px;
     background: #f5f5f5;
+    text-align: left;
 }
 
 #sidebarCollapse span {
@@ -77,23 +67,21 @@
     margin: 5px auto;
 }
 
+a {
+  color: #d3d3d3;
+}
+
 .sidebar_buttons {
-    font-size: 0.9em !important;
     padding-left: 30px !important;
-    width: 100%;
-    background: #6d7fcc;
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
+    background: rgba(246,239,239, 0);
+    padding: 45px;
+    font-size: 1.5em;
+    font-weight: 900;
 }
 
 .sidebar_buttons:hover {
     color: #7386D5;
-    background: #fff;
-}
-
-a[data-toggle="collapse"] {
-    position: relative;
+    background: rgba(20,20,20,0.1);
 }
 
 .dropdown-toggle::after {
@@ -153,6 +141,25 @@ a[data-toggle="collapse"] {
   position: absolute;
   right: 10px;
 }
+
+.social-buttons {
+  margin-right: 5%;
+}
+
+.icons {
+
+  max-width:75px;
+  max-height:95px;
+  width: auto;
+  height: auto;
+
+}
+
+.social-button {
+  position:relative;
+  display: inline;
+}
+
 div.jumbotron {
   padding-top: 100px;
   padding-bottom: 45px;
@@ -169,11 +176,7 @@ h1.display-3 {
 div.col-md-4 {
   background: aquamarine;
   background: rgba(0,0,0,0.4);
-  color: #fff;
   padding: 15px;
-}
-h3 {
-  color: darkgrey;
 }
 h2 {
   padding-bottom: 15px;
@@ -198,7 +201,6 @@ footer {
    left: 0;
    bottom: 0;
    width: 100%;
-   color: #000000;
    text-align: center;
 }
 
